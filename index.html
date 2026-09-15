@@ -1,0 +1,76 @@
+<div class="feedback-wrapper">
+  <header class="feedback-header">
+    <h1 class="page-title">Форма обратной связи</h1>
+    <p class="page-description">Если у вас возникли вопросы или предложения, напишите нам. Мы обязательно ответим!</p>
+  </header>
+
+  <div class="feedback-layout">
+    <main class="feedback-main">
+      <!-- Форма с указанным action для проверки -->
+      <form action="https://postman-echo.com/post" method="POST" class="feedback-form">
+        
+        <div class="form-row">
+          <div class="form-group">
+            <label for="user-name">Имя</label>
+            <input type="text" id="user-name" name="name" placeholder="Введите ваше имя" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="user-email">Электронная почта</label>
+            <input type="email" id="user-email" name="email" placeholder="example@mail.com" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="topic">Тема обращения</label>
+            <select id="topic" name="topic" required>
+              <option value="" disabled selected>Выберите тему</option>
+              <option value="support">Техническая поддержка</option>
+              <option value="billing">Вопросы по оплате</option>
+              <option value="delivery">Проблемы с доставкой</option>
+              <option value="other">Другое</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="order-number">Номер заказа</label>
+            <input type="text" id="order-number" name="order_number" placeholder="Например: 123456 (необязательно)">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Сообщение</label>
+          <textarea id="message" name="message" rows="5" placeholder="Подробно опишите ваш вопрос..." required></textarea>
+        </div>
+
+        <div class="checkbox-group">
+          <input type="checkbox" id="agreement" name="agreement" required>
+          <label for="agreement">Я согласен с условиями использования сервиса и обработкой данных</label>
+        </div>
+
+        <button type="submit" class="submit-btn">Отправить сообщение</button>
+      </form>
+    </main>
+
+    <aside class="feedback-sidebar">
+      <section class="sidebar-section">
+        <h2 class="sidebar-title">Контакты поддержки</h2>
+        <ul class="contact-list">
+          <li><strong>Телефон:</strong> 8 (800) 123-45-67</li>
+          <li><strong>Email:</strong> support@verstaem.online</li>
+          <li><strong>График работы:</strong> Пн-Пт, 9:00 - 18:00</li>
+        </ul>
+      </section>
+
+      <section class="sidebar-section">
+        <h2 class="sidebar-title">Этапы обработки</h2>
+        <ol class="processing-steps">
+          <li><strong>Регистрация:</strong> Ваше обращение фиксируется в системе.</li>
+          <li><strong>Анализ:</strong> Специалист изучает детали вашего вопроса.</li>
+          <li><strong>Решение:</strong> Мы связываемся с вами и помогаем решить проблему.</li>
+        </ol>
+      </section>
+    </aside>
+  </div>
+</div>
